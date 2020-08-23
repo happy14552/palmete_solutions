@@ -31,7 +31,7 @@ class ClientController extends Controller
         $response = $service->spreadsheets_values->get($spreadsheetId, $get_range);
 
         $values = $response->getValues();
-        dd($values);
+        return view('client-table', compact('values'));
 
 
 
