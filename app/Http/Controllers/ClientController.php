@@ -23,7 +23,7 @@ class ClientController extends Controller
 
         $client->setAccessType('offline');
 
-        $client->setAuthConfig('storage' . '/credentials.json');
+        $client->setAuthConfig('palmete_solutions/storage/' . '/credentials.json');
 
         $service = new Google_Service_Sheets($client);
         $spreadsheetId = "1cb5JA3Az9NQ5zsv7Qi93wxLKGar2UDk_4AcwVf1jDvw";
